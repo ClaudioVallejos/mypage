@@ -77,20 +77,21 @@
                         <div class="col-md-6 col-md-offset-1">
                             <div class="description">
                                 <h1>Junior JS Developer</h1>
-                                <button type="button" data-toggle="modal"
+                                <!-- <button type="button" data-toggle="modal"
                                     data-target="#contactModal"
                                     data-whatever="@contactModal"
                                     class="btn btn-neutral btn-lg btn-fill">Get
                                     in Touch</button>
-                                <br>
+                                <br> -->
                                 <div class="typewriter">
-                                    <h3> const = greeting => ()
-                                        {
+                                    <h3> <span style="color:#1e1eb5;"> const </span> greeting = () =>
+                                        <span style="color:#c9be44"> { </span>
                                         <br>
-                                        return ( <br>
-                                        <><br>
-                                            Hello, thanks for visting! <br>
-                                        </>});<br>
+                                        &emsp;
+                                        <span style="color:#c944c5"> return </span>
+                                        <span style="color:#e38827"> 'Hello, thanks for visting!'</span> <br>
+                                        <span style="color:#c9be44"> }</span>; 
+                                        <br>
                                     </h3>
                                 </div>
                             </div>
@@ -280,7 +281,7 @@
                     </div>
                 </div>
 -->
-            <div class="section section-no-padding">
+            <!-- <div class="section section-no-padding">
                 <div class="parallax filter-gradient blue"
                     data-color="blue">
                     <div class="parallax-background">
@@ -297,10 +298,10 @@
                             to me</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <footer class="footer">
                 <div class="container">
-                    <nav class="pull-left">
+                    <!-- <nav class="pull-left">
                         <ul>
                             <li>
                                 <a href="#">
@@ -323,7 +324,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </nav>
+                    </nav> -->
                     <!--
                         <div class="social-area pull-right">
                             <a class="btn btn-social btn-facebook
@@ -363,10 +364,10 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form method="POST" onsubmit= sendValidation()>
+                        <form method="POST" action="mailto:claudio.v18@hotmail.cl" enctype="text/plain">
                             <div class="form-group">
                                 <label for="recipient-name"
-                                    class="col-form-label">subjet:</label>
+                                    class="col-form-label">Name:</label>
                                 <input type="text" placeholder="Your Name"
                                     name="name" class="form-control"
                                     id="recipient-name" required>
@@ -374,16 +375,17 @@
                             <div class="form-group">
                                 <label for="recipient-name"
                                     class="col-form-label">email:</label>
-                                <input required type="mail"
+                                <input type="mail"
                                     placeholder="Your Mail" name="mail"
                                     class="form-control"
-                                    id="recipient-name">
+                                    id="recipient-name"required>
                             </div>
                             <div class="form-group">
                                 <label for="message-text"
                                     class="col-form-label">Message:</label>
                                 <textarea name="message"
                                     class="form-control"
+                                    maxlength="100"
                                     id="message-text" required></textarea>
                             </div>
                         </form>
@@ -397,10 +399,9 @@
                 </div>
             </div>
         </div>
-
-        <?php
-            include(" ./correo/correo.php" )
-            ?>
+        <!-- <script>
+            include(" ./correo/correo.php" );
+        </script> -->
         </body>
         <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
         <script src="assets/js/jquery-ui-1.10.4.custom.min.js"
